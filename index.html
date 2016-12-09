@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- bootstrap css -->
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <!-- jquery -->
+    <!-- Note: using subresource integrity; see: https://en.wikipedia.org/wiki/Subresource_Integrity -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+    <!-- custom script -->
+    <script type="text/javascript" src="scripts/app.js"></script>
+    <script type="text/javascript" src="scripts/data.js"></script>
+
+    <title>Rat Kicker!</title>
+  </head>
+  <body>
+    <div>
+      <h1>
+        Rat Kicker, the Game!
+      </h1>
+    </div>
+    <!-- the full game space -->
+    <div class="game-space container">
+      <!-- this is where the boxes for enemy and player information go -->
+      <div class="row1">
+        <!-- this is the player window which is split horizontally -->
+        <div class="window content-card col-md-4" id="player">
+          <!-- this is the top half with the player stats -->
+          <div class"window-top col-sm-12" id="player-stats">
+          </div>
+          <!-- this is the bottom half with the player gear -->
+          <div class="window-bottom col-sm-12" id="player-gear-window">
+        </div>
+        <!-- this is the enemy window that will display a picture -->
+        <div class="window content-card col-md-4" id="enemy">
+        </div>
+      </div>
+      <div>
+
+      </div>
+      <!-- this is the button to get to the next fight -->
+        <div class="button-space col-sm-12">
+          <button type="button" class="btn btn-danger center-block">Continue Murder Spree!</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

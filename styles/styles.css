@@ -1,0 +1,12 @@
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+* {
+  dashed, 1px, black;
+}
+
+btn {
+  /*align-self: center;*/
+}
