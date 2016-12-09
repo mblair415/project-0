@@ -4,9 +4,17 @@ h1 {
 }
 
 * {
-  dashed, 1px, black;
+  border: dashed 1px black;
 }
 
 btn {
   /*align-self: center;*/
+}
+
+.window {
+  min-height: 300px
+}
+
+.window-top, .window-bottom {
+  min-height: 150px
 }
