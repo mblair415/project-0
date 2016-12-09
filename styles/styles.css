@@ -7,14 +7,19 @@ h1 {
   border: dashed 1px black;
 }
 
-btn {
-  /*align-self: center;*/
-}
-
 .window {
-  min-height: 300px
+  min-height: 300px;
 }
 
 .window-top, .window-bottom {
-  min-height: 150px
+  min-height: 150px;
+  max-height: 200px;
+}
+
+.result-screen {
+  min-height: 100px;
+}
+
+.gear-title {
+  text-align: center;
 }
