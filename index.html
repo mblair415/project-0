@@ -10,8 +10,8 @@
     <!-- Note: using subresource integrity; see: https://en.wikipedia.org/wiki/Subresource_Integrity -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
     <!-- custom script -->
-    <script type="text/javascript" src="scripts/app.js"></script>
     <script type="text/javascript" src="scripts/data.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
 
     <title>Rat Kicker!</title>
   </head>
@@ -127,12 +127,13 @@
         <div>
         <div class="row">
           <!-- this is the enemy window that will display a picture -->
-          <div class="window content-card col-md-6" id="enemy">
+          <div class="window content-card col-md-6 center" id="enemy">
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-12">
+        <!-- this is a small screen for fight results -->
+        <div class="col-sm-12 result-screen">
         </div>
       </div>
       <!-- this is the button to get to the next fight -->

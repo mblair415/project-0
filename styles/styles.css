@@ -23,3 +23,7 @@ h1 {
 .gear-title {
   text-align: center;
 }
+
+#enemy {
+  background-color: black;
+}

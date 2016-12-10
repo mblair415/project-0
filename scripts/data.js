@@ -6,9 +6,9 @@ $(document).ready(function() {
     level : 1, // a function?  not sure yet.  not sure how i want to handle xp yet.
     xp : 0,
     hp : 10,  // eventually an equation.   combination of gear bonuses and level with a modifier for class.
-    dmg : [0, 1, 2]
+    dmg : [0, 1, 2],
     gear : {
-      head : {};
+      head : {},
       arms : {},
       chest : {},
       hands : {},
@@ -27,7 +27,13 @@ $(document).ready(function() {
         hp : 5,
         dmg : [0, 1, 1],
         loot : "none"
-      }
+      },
+  //     {
+  //       name : "sleeping infant rat",
+  //       image : ,
+  //       lvl : 1,
+  //       xp :
+  //     }
     ]
   }
 
