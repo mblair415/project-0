@@ -140,7 +140,6 @@ var mobs = {
 function updateGear(player, fightMob){
   var mobRating = fightMob.loot.rating;
   var curSlot = fightMob.loot.slot;
-  console.log(curSlot)
 
   if (mobRating === undefined) {
     return;
@@ -149,9 +148,6 @@ function updateGear(player, fightMob){
       return;
     } else {
       player.gear[curSlot] = fightMob.loot
-      console.log(player.gear[curSlot])
     }
   }
 }
-
-updateGear(player, mobs.difficulty1[2])

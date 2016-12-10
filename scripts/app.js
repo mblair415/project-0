@@ -36,7 +36,7 @@ var mobs = {
     },
     {
       name : 'sleeping infant rat',
-      image : 'https://media.mnn.com/assets/images/2015/06/rat-sleeping.jpg',
+      image : 'http://cdn.rentokil.com/content/global/images/desktop/main_black-rat-rev.jpg',
       lvl : 1,
       xp : 1,
       hp : 5,
@@ -90,28 +90,6 @@ updateStats(player);
     ' - ' + (player.dmg[0] + player.dmg[2]) + '</p>');
   }
 
-  function updateGear(player, fightMob){
-    var mobRating = fightMob.loot.rating;
-    var curSlot = fightMob.loot.slot;
-
-    if (mobRating === undefined) {
-      return;
-    } else {
-      if (mobRating < player.gear[curSlot].rating){
-        return;
-      } else {
-        player.gear[curSlot] = fightMob.loot;
-        $('#player-gear-' + curSlot).html('');
-        $('#player-gear-' + curSlot).append('<p>' + player.gear[curSlot].name + '</p>');
-      }
-    }
-  }
-
-  // function updateGear2(player, gear){  // beyond current scope
-  //   $("#player-gear-head").html('');
-  //   $("#player-gear-head").append('<p>' + player.lvl + '</p>')
-  // }
-
   function fight(player, fightMob){  // flash image and trigger combat function
     $('#enemy').html('');
     $('#enemy').append('<img id="'+fightMob.image+'" src="'+fightMob.image+'"/>');
@@ -161,6 +139,27 @@ updateStats(player);
     } else if (player.xp > 15 && player.lvl === 2) {
       player.lvl += 1;
       updateStats(player);
+    }
+  }
+
+  function updateGear(player, fightMob){
+    var mobGearRating = fightMob.loot.rating;
+    var curSlot = fightMob.loot.slot;
+
+    if (mobGearRating === undefined) {
+      return;
+    } else {
+      if (mobGearRating <= player.gear[curSlot].rating){
+        return;
+      } else {
+        player.gear[curSlot] = fightMob.loot;
+        player.hp += player.gear[curSlot].hp;
+        player.dmg[0] += player.gear[curSlot].dmg;
+        updateStats(player); // currently redundant.  playerWin updates gear then updates stats.  keeping for now, not sure how else i may call this in the future.
+        $('#player-gear-' + curSlot).html('');
+        $('#player-gear-' + curSlot).append('<p>' + player.gear[curSlot].name +
+        '</p>');
+      }
     }
   }
 
