@@ -3,9 +3,10 @@ h1 {
   text-align: center;
 }
 
-  /** {
-    border: dashed 1px black;
-  }*/
+
+div {
+  background-image: url("http://www.ambient-mixer.com/images_template/7/b/2/7b2028f685cc67aaf723828e0fa7cadf_full.jpg");
+}
 
 .window {
   min-height: 300px;
@@ -28,17 +29,30 @@ h1 {
   max-height: 200px
 }
 
+.player-head, .player-arms, .player-chest, .player-hands, .player-legs, .player-feet {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.player-head-title, .player-arms-title, .player-chest-title, .player-hands-title, .player-legs-title, .player-feet-title {
+  margin-right: 0px;
+  padding-right: 0px;
+  border-right: 0px;
+}
+
 #player {
-  background-color: #07431F;
+  /*background-color: #07431F;*/
   color: #FFF035;
 }
 
 #enemy {
-  background-color: black;
+  /*background-color: black;*/
   max-width: 700px;
+  max-height: 200px;
 }
 
 #statuts-combat, #status-gear {
-  overflow: scroll;
+  overflow: auto;
   min-height: 295px;
+  max-height: 400px;
 }

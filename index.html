@@ -26,7 +26,7 @@
       <!-- this is where the boxes for enemy and player information go -->
       <div class="row">
         <!-- this is the player window which is split horizontally -->
-        <div class="window content-card col-md-6" id="player">
+        <div class="window content-card col-sm-6" id="player">
           <!-- this is the top half with the player stats -->
           <div class="row">
             <section class="window-top col-sm-12" id="player-stats">
@@ -127,27 +127,27 @@
         <div>
         <div class="row">
           <!-- this is the enemy window that will display a picture -->
-          <div class="window content-card col-md-6" id="enemy">
+          <div class="window content-card col-sm-6" id="enemy">
           </div>
         </div>
       </div>
       <div class="button-space col-sm-12">
-        <button type="button" class="btn btn-danger center-block">Continue Murder Spree!</button>
+        <button type="button" class="btn btn-danger center-block">Kick a rat!</button>
       </div>
-      <div class="row results">
+      <div class="row results scroll-container">
+        <div class="scroll-container scrollable">
+          <section class="col-sm-12 result-screen scroll-container">
+            <div class="row">
+              <div class="col-sm-6 player-status-event" id="status-event">
+                <!-- this is where events like gaining gear or levels go -->
+              </div>
+              <div class="col-sm-6 player-status-combat" id="status-combat">
+                <!-- this is where events like taking or recieving damage go -->
+              </div>
+            </div>
+          </section>
+        </div>
         <!-- this is a small screen for fight results -->
-        <section class="col-sm-12 result-screen">
-          <div class="row">
-            <div class="col-sm-6 player-status-event scroll-container" id="status-event">
-              <!-- this is where events like gaining gear or levels go -->
-              <pre>status event test</pre>
-            </div>
-            <div class="col-sm-6 player-status-combat scroll-container" id="status-combat">
-              <!-- this is where events like taking or recieving damage go -->
-              <pre>status combat test</pre>
-            </div>
-          </div>
-        </section>
       </div>
       <!-- this is the button to get to the next fight -->
       </div>
