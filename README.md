@@ -1,8 +1,8 @@
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
-# Project 0: The Game:
+# Project 0: The Game
 ## Rat Kicker, the Game!
-For this project I created a simple version of a classic RPG using only the skills we learned in the first two weeks of bootcamp.  In this game you delve deeper into a dungeon encountering different types of creatures and searching for treasure.
+For this project I created a simple version of a classic RPG using the skills we learned in the first two weeks of bootcamp.  In this game you delve deeper into a dungeon encountering different types of creatures and searching for treasure.
 
 ## Technologies I used:
 * html

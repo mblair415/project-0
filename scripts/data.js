@@ -70,18 +70,30 @@ var player = {
   name : 'Frodo',  // eventually a field the player can enter a name into
   lvl : 1, // a function?  not sure yet.  not sure how i want to handle xp yet.
   xp : 0,
-  hp : 10,  // eventually an equation.   combination of gear bonuses and level with a modifier for class.
+  hp : 5,  // eventually an equation.   combination of gear bonuses and level with a modifier for class.
   dmg : [0, 1, 4],
   gear : {
     head : {
-      name : 'bullshit',
+      name : 'a large leaf',
       hp : 0,
       dmg : 0,
       rating : 0
     },
-    arms : {},
-    chest : {},
-    hands : {},
+    arms : {
+      name : 'a tattered friendship bracelet',
+      hp : 0,
+      dmg : 0,
+      rating : 0
+    },
+    chest : {
+      name : 'bubblewrap',
+      hp : 0,
+      dmg : 0,
+      rating : 0
+    },
+    hands : {
+      name : ''
+    },
     legs : {
       name : 'pants of modesty',
       hp : 0,
@@ -89,6 +101,11 @@ var player = {
       rating : 0
     },
     feet : {}
+    // totalGearHealth: function(){
+    //   player.forEach(element) {
+    //     player.hp += element.hp
+    //   }
+    // }
   }
 }
 
@@ -151,3 +168,15 @@ function updateGear(player, fightMob){
     }
   }
 }
+
+
+function totalGearHealth(gear){
+  for (currentSlot in gear) {
+    console.log(player.hp + " is player.hp")
+    console.log("what the shit", currentSlot.name)
+    player.hp += currentSlot.hp;
+  }
+  console.log(player.hp);
+}
+
+totalGearHealth(player.gear);

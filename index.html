@@ -10,7 +10,7 @@
     <!-- Note: using subresource integrity; see: https://en.wikipedia.org/wiki/Subresource_Integrity -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
     <!-- custom script -->
-    <script type="text/javascript" src="scripts/data.js"></script>
+    <!-- <script type="text/javascript" src="scripts/data.js"></script> -->
     <script type="text/javascript" src="scripts/app.js"></script>
 
     <title>Rat Kicker!</title>
@@ -76,7 +76,7 @@
                 <div>
                 </div>
                 <div class="row gear-title">
-                  <p>Gear:</p>
+                  <p>Gear</p>
                 </div>
                 <div class="row">
                   <div class="col-sm-3 player-head-title">
@@ -131,15 +131,25 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="button-space col-sm-12">
+        <button type="button" class="btn btn-danger center-block">Continue Murder Spree!</button>
+      </div>
+      <div class="row results">
         <!-- this is a small screen for fight results -->
-        <article class="col-sm-12 result-screen">
-        </artcile>
+        <section class="col-sm-12 result-screen">
+          <div class="row">
+            <div class="col-sm-6 player-status-event scroll-container" id="status-event">
+              <!-- this is where events like gaining gear or levels go -->
+              <pre>status event test</pre>
+            </div>
+            <div class="col-sm-6 player-status-combat scroll-container" id="status-combat">
+              <!-- this is where events like taking or recieving damage go -->
+              <pre>status combat test</pre>
+            </div>
+          </div>
+        </section>
       </div>
       <!-- this is the button to get to the next fight -->
-        <div class="button-space col-sm-12">
-          <button type="button" class="btn btn-danger center-block">Continue Murder Spree!</button>
-        </div>
       </div>
     </div>
   </body>

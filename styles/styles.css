@@ -24,9 +24,21 @@ h1 {
   text-align: center;
 }
 
+.results {
+  max-height: 200px
+}
+
+#player {
+  background-color: #07431F;
+  color: #FFF035;
+}
+
 #enemy {
   background-color: black;
   max-width: 700px;
 }
 
-#player-dmg
+#statuts-combat, #status-gear {
+  overflow: scroll;
+  min-height: 295px;
+}
