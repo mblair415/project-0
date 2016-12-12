@@ -5,6 +5,7 @@
 For this project I created a simple version of a classic RPG using the skills we learned in the first two weeks of bootcamp.  In this game you delve deeper into a dungeon encountering different types of creatures and searching for treasure.
 
 Published project here: https://github.com/mblair415/project-0
+Functional game hosted here:  https://www.bitballoon.com/sites/ratkickerthegame
 
 ## Technologies I used:
 * html

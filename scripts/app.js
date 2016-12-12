@@ -5,10 +5,10 @@ $(document).ready(function() {
 // to check for loot once a thing dies.
 
 var player = {
-  name : 'Frodo',  // eventually a field the player can enter a name into
+  name : 'Frodo',
   lvl : 1,
   xp : 0,
-  hp : 10,  // eventually an equation.   combination of gear bonuses and level with a modifier for class.
+  hp : 10,
   dmg : [0, 1, 4],
   gear : {
     head : {},
@@ -257,13 +257,11 @@ updateStats(player);
     if (player.xp > 5 && player.lvl === 1) { // need to turn this into something more impressive.
       player.lvl += 1; // player needs to be told.
       player.hp = player.lvl * 5;
-      // player.dmg[0] += 1;
       updateStats(player);
       $(".player-status-event").prepend('<pre>You gained a level and are now level ' + player.lvl + '!</pre>');
     } else if (player.xp > 15 && player.lvl === 2) {
       player.lvl += 1;
       player.hp = player.lvl * 5;
-      // player.dmg[0] += 1;
       updateStats(player);
       $(".player-status-event").prepend('<pre>You gained a level and are now level ' + player.lvl + '!</pre>');
     } else if (player.xp > 25 && player.lvl === 3) {
@@ -299,7 +297,6 @@ updateStats(player);
   }
 
   function playerDeath(player, fightMob, mobSwing) { // need a modal or something.
-    // console.log("you died, dude.")
     $(".player-status-combat").prepend('<pre>You were hit for ' + mobSwing + ' and you succum to the damage.</pre>');
     $(".player-status-event").prepend('<pre>You got all the way to level ' + player.lvl + ' before you died!</pre>');
   }
