@@ -4,6 +4,8 @@
 ## Rat Kicker, the Game!
 For this project I created a simple version of a classic RPG using the skills we learned in the first two weeks of bootcamp.  In this game you delve deeper into a dungeon encountering different types of creatures and searching for treasure.
 
+Published project here: https://github.com/mblair415/project-0
+
 ## Technologies I used:
 * html
 * CSS
@@ -11,9 +13,9 @@ For this project I created a simple version of a classic RPG using the skills we
 * JavaScript
 * Jquery
 
-I have css movement through fade in.
 I have a lot of object oriented programming.
 I have multiple levels that function as rounds.
+I have css manipulation through fadein/fadeout and with hover over states.
 
 
 ## Code I'm proud of:
@@ -48,7 +50,7 @@ function combat(player, fightMob){ // set up temp hp for mob.  recursive loot fo
 }
 ```
 
-I'm also proud of the code that updates gear for the player.  It uses closures to update global variables and it uses both dot and bracket notation to refer to JavaScript objects allowing me to use variables to write a single piece of code that will update no matter which of the 6 different slots are changed.  This will update player attributes (health and damage), and also update the specific field with the player's new loot.
+I'm also proud of the code that updates gear for the player.  It uses closures to update global variables and it uses both dot and bracket notation to refer to JavaScript objects allowing me to use variables to write a single piece of code that will update no matter which of the 6 different slots are changed.  This will update player attributes (health and damage), and also update the UI for the player with the player's new loot, because getting loot is the best!
 ```javascript
 function updateGear(player, fightMob){ // checks to see if new gear is better than current, updates stats and equips on screen
   var mobGearRating = fightMob.loot.rating;
@@ -79,3 +81,4 @@ function updateGear(player, fightMob){ // checks to see if new gear is better th
 
 
 ## Screenshots:
+http://imgur.com/a/mA4ZD
