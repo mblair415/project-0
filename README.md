@@ -11,6 +11,11 @@ For this project I created a simple version of a classic RPG using the skills we
 * JavaScript
 * Jquery
 
+I have css movement through fade in.
+I have a lot of object oriented programming.
+I have multiple levels that function as rounds.
+
+
 ## Code I'm proud of:
 This code is how combat takes place.  It displays complex nested functions that will recursively call themselves as needed, it also uses closures, and it intelligently uses a random damage generator a single time to determine hit damage as needed without calling for things in the case that they're not needed.
 

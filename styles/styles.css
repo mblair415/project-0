@@ -1,11 +1,23 @@
 h1 {
-  color: blue;
   text-align: center;
 }
 
+span {
+  background-color: rgba(157,20,12,.5);
+  color: #3BC7DE;
+  border-radius: 10px;
+}
 
-div {
-  background-image: url("http://www.ambient-mixer.com/images_template/7/b/2/7b2028f685cc67aaf723828e0fa7cadf_full.jpg");
+span:hover {
+  background-color: rgba(59,199,222,.5);
+  color: #650D08;
+  border-radius: 10px;
+}
+
+body {
+  background-image: url("http://vignette1.wikia.nocookie.net/elderscrolls/images/f/f4/DRDungeon.png/revision/latest?cb=20120512225154");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .window {
@@ -41,9 +53,13 @@ div {
 }
 
 #player {
-  /*background-color: #07431F;*/
-  color: #FFF035;
+  background-color: rgba(216,216,216,.55);
+  border-radius: 30px;
+  color: #650D08;
 }
+
+#player:hover {
+background-color: rgba(216,216,216,.75);}
 
 #enemy {
   /*background-color: black;*/
